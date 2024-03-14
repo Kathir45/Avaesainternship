@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;   font-weight: 400;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url("hero.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 40rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about img {
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#course {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#course h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#course ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#course li {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+#testimonials {
+    background-color: #f5f5f5;
+   padding: 4rem 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#testimonials blockquote {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+}
+
+#testimonials cite {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#contact {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    #about img {
+        width: 15rem;
+    }
+
+    #course li {
+        width: 45%;
+    }
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
